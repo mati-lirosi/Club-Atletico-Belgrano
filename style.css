@@ -1,0 +1,639 @@
+
+
+
+
+body{
+
+ background-image: url(https://marcadegol.com/fotos//2022/02/review-camisetas-errea-de-belgrano-2022.jpg);
+ background-attachment: fixed;
+}
+.Iam {
+  padding: 2em 5em;
+  font: normal 40px/50px Montserrat, sans-serif;
+  color: #999;
+  margin-bottom: 80px;
+  margin-top: 180 px;
+font-size: 40px; text-shadow: -px 0px 2px black;
+}
+.Iam p {
+  height: 50px;
+  float: left;
+  margin-right: 0.3em;
+  color:black;
+  font-size: 40px; text-shadow: -5px 0px 10px black;
+
+}
+.Iam b {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+  top: 40px;
+  color :#3A68DD;
+    font-size: 40px; text-shadow: -3px 2px 4px black;
+
+ 
+}
+
+
+
+
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked){
+  position: absolute;
+  left: -9999px;
+}
+.menu-icon:checked + label,
+.menu-icon:not(:checked) + label{
+  position: fixed;
+  top: 63px;
+  right: 75px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  z-index: 10;
+}
+.menu-icon:checked + label:before,
+.menu-icon:not(:checked) + label:before{
+  position: absolute;
+  content: '';
+  display: block;
+  width: 30px;
+  height: 20px;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  border-top: 2px solid #ececee;
+  border-bottom: 2px solid #ececee;
+  transition: border-width 100ms 1500ms ease, 
+              top 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1),
+              height 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1), 
+              background-color 200ms ease,
+              transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.menu-icon:checked + label:after,
+.menu-icon:not(:checked) + label:after{
+  position: absolute;
+  content: '';
+  display: block;
+  width: 22px;
+  height: 2px;
+  z-index: 20;
+  top: 10px;
+  right: 4px;
+  background-color: #ececee;
+  margin-top: -1px;
+  transition: width 100ms 1750ms ease, 
+              right 100ms 1750ms ease,
+              margin-top 100ms ease, 
+              transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.menu-icon:checked + label:before{
+  top: 10px;
+  transform: rotate(45deg);
+  height: 2px;
+  background-color: #ececee;
+  border-width: 0;
+  transition: border-width 100ms 340ms ease, 
+              top 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+              height 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1), 
+              background-color 200ms 500ms ease,
+              transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.menu-icon:checked + label:after{
+  width: 30px;
+  margin-top: 0;
+  right: 0;
+  transform: rotate(-45deg);
+  transition: width 100ms ease,
+              right 100ms ease,  
+              margin-top 100ms 500ms ease, 
+              transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.nav{
+  position: fixed;
+  top: 33px;
+  right: 50px;
+  display: block;
+  width: 80px;
+  height: 80px;
+  padding: 0;
+  margin: 0;
+  z-index: 9;
+  overflow: hidden;
+  box-shadow: 0 8px 30px 0 rgba(0,0,0,0.3);
+  background-color: #353746;
+  animation: border-transform 7s linear infinite;
+  transition: top 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),  
+              right 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),
+              transform 250ms 1100ms ease,
+              width 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1),
+              height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+@keyframes border-transform{
+    0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+  14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+  28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+  42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+}
+
+.menu-icon:checked ~ .nav {
+   background-image: url(https://marcadegol.com/fotos//2022/12/review-tercera-camiseta-errea-de-belgrano-2022-2023.jpg);
+  background-size:cover ;
+  animation-play-state: paused;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 200%;
+  height: 200%;
+
+
+  transition: top 350ms 700ms cubic-bezier(0.23, 1, 0.32, 1),  
+              right 350ms 700ms cubic-bezier(0.23, 1, 0.32, 1),
+              transform 250ms 700ms ease,
+              width 750ms 1000ms cubic-bezier(0.23, 1, 0.32, 1),
+              height 750ms 1000ms cubic-bezier(0.23, 1, 0.32, 1);
+
+}
+
+.nav ul{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 6;
+  text-align: center;
+  transform: translateY(-50%);
+  list-style: none;
+
+
+
+
+}
+.nav ul li{
+
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 10px 0;
+  text-align: center;
+  list-style: none;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(30px);
+  transition: all 250ms linear;
+ 
+
+
+
+}
+  
+}
+.nav ul li:nth-child(1){
+  transition-delay: 200ms;
+}
+.nav ul li:nth-child(2){
+  transition-delay: 150ms;
+}
+.nav ul li:nth-child(3){
+  transition-delay: 100ms;
+}
+.nav ul li:nth-child(4){
+  transition-delay: 50ms;
+
+}
+.nav ul li a{
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9vh;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: 5px;
+  display: inline-block;
+  position: relative;
+  color: #ececee;
+  transition: all 250ms linear;
+}
+.nav ul li a:hover{
+  text-decoration: none;
+  color: #ffeba7;
+
+}
+.nav ul li a:after{
+  display: block;
+  position: absolute;
+  top: 50%;
+  content: '';
+  height: 2vh;
+  margin-top: -1vh;
+  width: 0;
+  left: 0;
+  background-color: #353746;
+  opacity: 0.8;
+  transition: width 250ms linear;
+
+}
+.nav ul li a:hover:after{
+  width: 100%;
+
+}
+
+
+.menu-icon:checked ~ .nav  ul li {
+  pointer-events: auto;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 350ms ease,
+              transform 250ms ease;
+}
+.menu-icon:checked ~ .nav ul li:nth-child(1){
+  transition-delay: 1400ms;
+}
+.menu-icon:checked ~ .nav ul li:nth-child(2){
+  transition-delay: 1480ms;
+}
+.menu-icon:checked ~ .nav ul li:nth-child(3){
+  transition-delay: 1560ms;
+}
+.menu-icon:checked ~ .nav ul li:nth-child(4){
+  transition-delay: 1640ms;
+}
+
+
+
+.logo {
+  position: absolute;
+  top: 60px;
+  left: 50px;
+  display: block;
+  z-index: 11;
+  transition: all 250ms linear;
+}
+.logo img {
+  height: 26px;
+  width: auto;
+  display: block;
+}
+
+
+/*Inicia cambio de estilo de scroll bar*/
+::-webkit-scrollbar{
+    background: #d4d4d4;
+    width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+
+
+
+
+@import "compass/css3";
+
+* { box-sizing: border-box; 
+
+
+}
+
+
+
+
+
+
+form {
+  display: block;
+  background:#111; 
+  width:300px;
+  border-radius:0.4em;
+  border:1px solid #191919;
+  overflow:hidden;
+   margin-top: 10%;
+
+
+  box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+
+ 
+}
+
+form:after {
+  content:"";
+  display:block;
+  position:absolute;
+  height:1px;
+  width:100px;
+  left:20%;
+  background:linear-gradient(left, #111, #444, #b6b6b8, #444, #111);
+  top:0;
+
+}
+
+form:before {
+  content:"";
+  display:block;
+  position:absolute;
+  width:8px;
+  height:5px;
+  border-radius:50%;
+  left:34%;
+  top:-7px;
+  box-shadow: 0 0 6px 4px #fff;
+
+}
+
+.inset {
+  padding:20px; 
+  border-top:1px solid #19191a;
+
+}
+
+form h1 {
+  font-size:18px;
+  color: #1ca3d0;
+  text-align:center;
+  padding:15px 0;
+  border-bottom:1px solid rgba(0,0,0,1);
+  position:relative;
+}
+
+form h1:after {
+  content:"";
+  display:block;
+  width:250px;
+  height:100px;
+  position:absolute;
+  top:0;
+  left:50px;
+  pointer-events:none;
+  transform:rotate(70deg);
+  background:linear-gradient(50deg, rgba(255,255,255,0.15), rgba(0,0,0,0));
+
+  
+}
+
+label {
+
+  color:lightblue;
+  display:block;
+  padding-bottom:9px;
+}
+
+input[type=text],
+input[type=password] {
+  width:100%;
+  padding:8px 5px;
+  background:linear-gradient(#1f2124, #27292c);
+  border:1px solid #222;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.1);
+  border-radius:0.3em;
+  margin-bottom:20px;
+}
+
+label[for=remember]{
+  color:white;
+  display:inline-block;
+  padding-bottom:0;
+  padding-top:5px;
+}
+
+input[type=checkbox] {
+  display:inline-block;
+  vertical-align:top;
+}
+
+.p-container {
+  padding:0 20px 20px 20px; 
+}
+
+.p-container:after {
+  clear:both;
+  display:table;
+  content:"";
+}
+
+.p-container span {
+  display:block;
+  float:left;
+  color:#0d93ff;
+  padding-top:8px;
+  padding-bottom: 8px;
+}
+
+input[type=submit] {
+  padding:5px 20px;
+  border:1px solid rgba(0,0,0,0.4);
+  text-shadow:0 -1px 0 rgba(0,0,0,0.4);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.3),
+    inset 0 10px 10px rgba(255,255,255,0.1);
+  border-radius:0.3em;
+  background:#0184ff;
+  color:white;
+  float:right;
+  font-weight:bold;
+  cursor:pointer;
+  font-size:13px;
+}
+
+input[type=submit]:hover {
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.3),
+    inset 0 -10px 10px rgba(255,255,255,0.1);
+}
+
+input[type=text]:hover,
+input[type=password]:hover,
+label:hover ~ input[type=text],
+label:hover ~ input[type=password] {
+  background:#27292c;
+}
+
+
+
+
+
+
+
+
+
+.pieDePagina {display: block;
+  
+font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+color: #ffffff; 
+font-size: 18px; 
+font-weight: 400; 
+text-align: center; 
+background: #889ccf; 
+margin-top:8%; 
+overflow: hidden; 
+padding: 20px; 
+border-radius: 35px 0px 35px 0px; 
+-moz-border-radius: 35px 0px 35px 0px; 
+-webkit-border-radius: 35px 0px 35px 0px; 
+border: 2px solid #5878ca;
+text-shadow: -5px 7px 12px black;
+ border-color: black;
+
+}
+
+
+}
+.socialw {
+  width: 235px;
+  margin: 100px auto 0 auto;
+  overflow: auto;
+  height: 100%;
+}
+
+.social{
+  position:relative;
+  border: 1px solid #292929;
+  width: 37px;
+  height: 62px;
+  float: left;
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+.first {
+  margin-left: 0px;
+}
+
+/*    ANIMATIONS   */
+
+/* Fade In Down */
+@-webkit-keyframes fadeInDown {
+  0% {  opacity: 0;  -webkit-transform: translateY(-100px);  }  
+  100% {  opacity: 1;  -webkit-transform: translateY(0);  }
+}
+
+@-moz-keyframes fadeInDown {
+  0% {  opacity: 0;  -moz-transform: translateY(-100px);  } 
+  100% {  opacity: 1;  -moz-transform: translateY(0);  }
+}
+
+@-o-keyframes fadeInDown {
+  0% {  opacity: 0;  -o-transform: translateY(-100px);  } 
+  100% {  opacity: 1;  -o-transform: translateY(0);  }
+}
+
+@keyframes fadeInDown {
+  0% {  opacity: 0;  transform: translateY(-100px); } 
+  100% {  opacity: 1;  transform: translateY(0);  }
+}
+
+.fadeInDown {
+  -webkit-animation: fadeInDown 1s both 0.5s;
+  -moz-animation: fadeInDown 1s both 0.5s;
+  -o-animation: fadeInDown 1s both 0.5s;
+  animation: fadeInDown 1s both 0.5s;
+}
+/* Fade In Down */
+
+/* Social Transition */
+
+.social img{
+position:absolute;
+left:0;
+top:0;
+-webkit-transition: margin-top 250ms ease-in;
+-moz-transition: margin-top 250ms ease-in;
+-o-transition:  margin-top 250ms ease-in;
+transition:  margin-top 250ms ease-in;
+}
+.social:hover img{
+margin-top:-62px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 575.98px)
+  // hacer algo en ese rango de ancho.
+}
+
+.nav ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-weight: 00;
+    display: inline-block;
+    
+    color: #ececee;
+    transition: all 250ms linear;
+}
+
+  .menu-icon:checked + label,
+  .menu-icon:not(:checked) + label{
+    right: 55px;
+  }
+
+  .logo {
+    left: 30px;
+  }
+
+
+  h1{
+    font-size: 9vw;
+    -webkit-text-stroke: 2px transparent;
+    text-stroke: 2px transparent;
+    -webkit-text-fill-color: #ffeba7;
+    text-fill-color: #ffeba7;
+    color: #ffeba7;
+  }
+
+
+
+.ubicacion{
+  margin: 8px;
+}
+@media screen and (max-width: 1100px) {
+.nav ul li a {
+    
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: 50px;
+  display: inline-block;
+  position: relative;
+  color: #ececee;
+  transition: all 250ms linear;
+}
