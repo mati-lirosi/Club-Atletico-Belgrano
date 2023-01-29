@@ -196,7 +196,8 @@ font-size: 40px; text-shadow: -px 0px 2px black;
   transform: translateY(30px);
   transition: all 250ms linear;
  
-
+ text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+-webkit-text-fill-color: #FCDB00;
 
 
 }
