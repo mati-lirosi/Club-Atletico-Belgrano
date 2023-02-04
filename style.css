@@ -613,6 +613,7 @@ l  position: relative;
   width: 100%;
   height: 100vh;
   overflow-x: scroll;
+     justify-content: center;
 
   
   
@@ -746,6 +747,7 @@ border-radius: 5px;
 
 
   margin-top: 200px;
+
  align-items: center;
   justify-content: center;
  }
