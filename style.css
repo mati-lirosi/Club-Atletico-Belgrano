@@ -624,6 +624,7 @@ l  position: relative;
   flex: 0 0 100%;
   width: 100%;
   object-fit: cover;
+   justify-content: center;
 
 
 
@@ -702,6 +703,7 @@ border:solid 2px ;
 border-color: black;
 border-radius: 5px;
   margin-top: 200px;
+   justify-content: center;
  }
 
 
@@ -742,8 +744,8 @@ border-radius: 5px;
 .slider-container {
   display: block;
 
-border:solid 2px ;
-border-color: black;
-border-radius: 5px;
+
   margin-top: 200px;
+ align-items: center;
+  justify-content: center;
  }
